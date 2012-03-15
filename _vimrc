@@ -8,7 +8,7 @@ set ruler
 syntax on
 
 " set color scheme
-color twilight
+color Sunburst
 
 " Set the font to inconsolata size 12
 set guifont=Inconsolata:h12
@@ -57,6 +57,9 @@ set colorcolumn=85
 
 " add json syntax highlighting
 au BufNewFile,BufRead *.json set ft=javascript
+
+" add markdown syntax highlighting
+au BufNewFile,BufRead *.md set ft=mkd
 
 " Hightlight trailing whitespace
 highlight ExtraWhitespace ctermbg=red guibg=red
