@@ -1,3 +1,8 @@
+" this seems like something i should set.  Still not completely sure about
+" what it does haha
+" http://vimdoc.sourceforge.net/htmldoc/starting.html#compatible-default
+set nocompatible
+
 " add line numbers
 set number
 
