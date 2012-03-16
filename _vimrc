@@ -57,6 +57,9 @@ set wildignore+=*.o,*.obj,.git,*.rbc,*.class,.svn
 " always show the status bar
 set laststatus=2
 
+" put more information in the status line
+set statusline=%F%m%r%h%w\ [format=%{&ff}]\ [type=%Y]\ [ascii=\%03.3b]\ [hex=\%02.2B]\ [pos=%04l,%04v][%p%%]\ [len=%L]
+
 " Set a print margin at 85
 set colorcolumn=85
 
