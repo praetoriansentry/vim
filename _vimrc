@@ -12,11 +12,14 @@ set ruler
 " turn on syntax highlighting
 syntax on
 
-" set color scheme
-color Sunburst
+" Don't bother with font options and stuff unless we're in the gui
+if has("gui_running")
+    " set color scheme
+    color Sunburst
 
-" Set the font to inconsolata size 12
-set guifont=Inconsolata:h12
+    " Set the font to inconsolata size 12
+    set guifont=Inconsolata:h12
+endif
 
 " do not wrap long lines by default
 set nowrap
@@ -92,30 +95,6 @@ if has("multi_byte")
     set fileencodings=ucs-bom,utf-8,latin1
 endif
 
-" Function for tab complete from vim wiki.  There is one minor change that
-" lets me tab at the beginning of a line right next to a word
-" http://vim.wikia.com/wiki/Smart_mapping_for_tab_completion
-function! Smart_TabComplete()
-    let line = getline('.')
-
-    let substr = strpart(line, -1, col('.'))
-    let substr = matchstr(substr, "[^ \t]*$")
-    if (strlen(substr)==0)
-        return "\<tab>"
-    endif
-    let has_period = match(substr, '\.') != -1
-    let has_slash = match(substr, '\/') != -1
-    if (!has_period && !has_slash)
-        return "\<C-X>\<C-P>"
-    elseif ( has_slash )
-        return "\<C-X>\<C-F>"
-    else
-        return "\<C-X>\<C-O>"
-    endif
-endfunction
-" remap for tab completion
-inoremap <tab> <c-r>=Smart_TabComplete()<CR>
-
 " Setup indenation
 if has("autocmd")
     filetype plugin indent on
@@ -141,3 +120,4 @@ map <C-A>   ggVG
 " remap tab to allow for visual mode adjustments in indentation
 vmap <Tab> >gv
 vmap <S-Tab> <gv
+
