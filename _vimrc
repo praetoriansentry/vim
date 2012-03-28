@@ -84,6 +84,9 @@ set cursorline
 " make backspace work like most other things
 set backspace=2
 
+" set the fold method as using text markers
+set foldmethod=marker
+
 " A little snippet that should help with encoding
 if has("multi_byte")
     if &termencoding == ""
@@ -120,4 +123,8 @@ map <C-A>   ggVG
 " remap tab to allow for visual mode adjustments in indentation
 vmap <Tab> >gv
 vmap <S-Tab> <gv
+
+" Remap the space bar to open and close folds
+nnoremap <silent> <Space> @=(foldlevel('.')?'za':"\<Space>")<CR>
+vnoremap <Space> zf
 
