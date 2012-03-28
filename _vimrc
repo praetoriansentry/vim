@@ -103,8 +103,14 @@ if has("autocmd")
     filetype plugin indent on
 endif
 
+" Turn on backups
+set backup
 
-
+" Keep the backup and swap files out of the working directory
+" Forward slashes seem to work in window.  The trailing double slash
+" makes the file name unique
+set directory=c:/tmp//,/tmp//,.
+set backupdir=c:/tmp//,/tmp//,.
 
 
 """""""""""""""""""""""""""""""""""
@@ -128,3 +134,9 @@ vmap <S-Tab> <gv
 nnoremap <silent> <Space> @=(foldlevel('.')?'za':"\<Space>")<CR>
 vnoremap <Space> zf
 
+" use f1/f2 to set to unix/dos format
+map <F1> :set fileformat=unix<CR>
+map <F2> :set fileformat=dos<CR>
+
+"use f3 to set wrap/nowrap
+map <F3> :set wrap!<CR>
