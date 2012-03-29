@@ -72,6 +72,9 @@ au BufNewFile,BufRead *.json set ft=javascript
 " add markdown syntax highlighting
 au BufNewFile,BufRead *.md set ft=mkd
 
+" Add less syntax highighting
+au BufNewFile,BufRead *.less set filetype=less
+
 " Hightlight trailing whitespace
 highlight ExtraWhitespace ctermbg=red guibg=red
 
