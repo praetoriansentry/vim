@@ -115,15 +115,10 @@ set backup
 set directory=c:/tmp//,/tmp//,.
 set backupdir=c:/tmp//,/tmp//,.
 
-
-"""""""""""""""""""""""""""""""""""
-" Key remappings
-"""""""""""""""""""""""""""""""""""
-" cut
+" Key Mappings {{{
+" Standard key mappings for cut/copy/paste
 vnoremap <C-X> "+x
-" copy
 vnoremap <C-C> "+y
-" paste
 map <C-V> "+gP:
 exe 'inoremap <script> <C-V>' paste#paste_cmd['i']
 exe 'vnoremap <script> <C-V>' paste#paste_cmd['v']
@@ -143,3 +138,7 @@ map <F2> :set fileformat=dos<CR>
 
 "use f3 to set wrap/nowrap
 map <F3> :set wrap!<CR>
+
+" use f5 for markdown files
+nmap <f5> :!pandoc -s -f markdown -t html % > %.html<CR>
+"}}}
