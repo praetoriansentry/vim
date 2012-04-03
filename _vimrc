@@ -115,6 +115,7 @@ set backup
 set directory=c:/tmp//,/tmp//,.
 set backupdir=c:/tmp//,/tmp//,.
 
+
 " Key Mappings {{{
 " Standard key mappings for cut/copy/paste
 vnoremap <C-X> "+x
@@ -141,4 +142,17 @@ map <F3> :set wrap!<CR>
 
 " use f5 for markdown files
 nmap <f5> :!pandoc -s -f markdown -t html % > %.html<CR>
+
+" Small function to run a diff on the backup file
+function MyDiff ()
+    if has("win32")
+        :vert diffsplit c:/tmp//%~
+    else
+        :vert diffsplit /tmp//%~
+    endif
+endfunction
+
+" Mapping to call the diff function
+map <F4> :call MyDiff()<CR>
+
 "}}}
