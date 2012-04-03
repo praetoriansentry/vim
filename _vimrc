@@ -115,6 +115,9 @@ set backup
 set directory=c:/tmp//,/tmp//,.
 set backupdir=c:/tmp//,/tmp//,.
 
+" Set a global variable for authors.  I use this in templates
+let g:author = "John Hilliard"
+
 
 " Key Mappings {{{
 " Standard key mappings for cut/copy/paste
@@ -133,15 +136,19 @@ vmap <S-Tab> <gv
 nnoremap <silent> <Space> @=(foldlevel('.')?'za':"\<Space>")<CR>
 vnoremap <Space> zf
 
+" faster buffer cyling
+map <C-right> <ESC>:bn<CR>
+map <C-left> <ESC>:bp<CR>
+
+
+
+
 " use f1/f2 to set to unix/dos format
 map <F1> :set fileformat=unix<CR>
 map <F2> :set fileformat=dos<CR>
 
 "use f3 to set wrap/nowrap
 map <F3> :set wrap!<CR>
-
-" use f5 for markdown files
-nmap <f5> :!pandoc -s -f markdown -t html % > %.html<CR>
 
 " Small function to run a diff on the backup file
 function MyDiff ()
@@ -155,4 +162,6 @@ endfunction
 " Mapping to call the diff function
 map <F4> :call MyDiff()<CR>
 
+" use f5 for markdown files
+nmap <f5> :!pandoc -s -f markdown -t html % > %.html<CR>
 "}}}
