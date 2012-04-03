@@ -9,6 +9,9 @@ set number
 " show position numbers and info
 set ruler
 
+" Start pathogen
+call pathogen#infect()
+
 " turn on syntax highlighting
 syntax on
 
@@ -140,9 +143,6 @@ vnoremap <Space> zf
 map <C-right> <ESC>:bn<CR>
 map <C-left> <ESC>:bp<CR>
 
-
-
-
 " use f1/f2 to set to unix/dos format
 map <F1> :set fileformat=unix<CR>
 map <F2> :set fileformat=dos<CR>
@@ -162,6 +162,9 @@ endfunction
 " Mapping to call the diff function
 map <F4> :call MyDiff()<CR>
 
-" use f5 for markdown files
-nmap <f5> :!pandoc -s -f markdown -t html % > %.html<CR>
+" use \m for pandoc
+map <Leader>m :!pandoc -s -f markdown -t html % > %.html<CR>
+
+" use \nt for nerd tree
+map <Leader>nt :NERDTree<CR>
 "}}}
