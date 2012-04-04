@@ -121,6 +121,8 @@ set backupdir=c:/tmp//,/tmp//,.
 " Set a global variable for authors.  I use this in templates
 let g:author = "John Hilliard"
 
+" Try to stop it from using strange characters
+let g:NERDTreeDirArrows = 0
 
 if has("win32")
     source $HOME/vimfiles/mappings.vim
