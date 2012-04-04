@@ -27,18 +27,6 @@ map <F2> :set fileformat=dos<CR>
 "use f3 to set wrap/nowrap
 map <F3> :set wrap!<CR>
 
-" Small function to run a diff on the backup file
-function MyDiff ()
-    if has("win32")
-        :vert diffsplit c:/tmp//%~
-    else
-        :vert diffsplit /tmp//%~
-    endif
-endfunction
-
-" Mapping to call the diff function
-map <F4> :call MyDiff()<CR>
-
 " use \m for pandoc
 map <Leader>m :!pandoc -s -f markdown -t html % > %.html<CR>
 
