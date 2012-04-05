@@ -28,7 +28,7 @@ map <F2> :set fileformat=dos<CR>
 map <F3> :set wrap!<CR>
 
 " use \m for pandoc
-map <Leader>m :!pandoc -s -f markdown -t html % > %.html<CR>
+map <Leader>m :!pandoc -s -c http://s3.jfh.me/css/john.css -f markdown -t html % > %.html<CR>
 
 " use \nt for nerd tree
 map <Leader>nt :NERDTree<CR>
