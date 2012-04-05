@@ -9,6 +9,10 @@ set number
 " show position numbers and info
 set ruler
 
+" make sure that buffers get hidden, this will help hold on to undo histoory
+" when switching buffers
+set hidden
+
 " Start pathogen
 call pathogen#infect()
 
