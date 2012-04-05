@@ -1,0 +1,6 @@
+% Title
+% ¡g:author¡
+% ¡strftime("%c")¡
+
+Title
+=====
