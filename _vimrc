@@ -128,6 +128,10 @@ let g:author = "John Hilliard"
 " Try to stop it from using strange characters
 let g:NERDTreeDirArrows = 0
 
+" make sure the default file format is unix
+set ff=unix
+
+" include my mappings file
 if has("win32")
     source $HOME/vimfiles/mappings.vim
 else
