@@ -33,3 +33,6 @@ map <Leader>mp :!pandoc -s --variable=geometry:margin=1in -o %.pdf %<CR>
 
 " use \nt for nerd tree
 map <Leader>nt :NERDTree<CR>
+
+" double tap leader to run zoomwin
+nmap <unique> <Leader><Leader> <Plug>ZoomWin
