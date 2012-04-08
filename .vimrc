@@ -25,7 +25,15 @@ if has("gui_running")
     color Sunburst
 
     " Set the font to inconsolata size 12
-    set guifont=Inconsolata:h12
+    if has("gui_gtk2")
+        set guifont=Inconsolata\ 12
+    elseif has("gui_photon")
+        set guifont=Inconsolata:s12
+    elseif has("gui_kde")
+        set guifont=Inconsolata/12/-1/5/50/0/0/0/1/0
+    else
+        set guifont=Inconsolata:h12:cDEFAULT
+    endif
 endif
 
 " do not wrap long lines by default
