@@ -139,6 +139,9 @@ let g:NERDTreeDirArrows = 0
 " make sure the default file format is unix
 set ff=unix
 
+" Set the mouse mode to be a so that everything works nicely on the terminal
+set mouse=a
+
 " include my mappings file
 if has("win32")
     source $HOME/vimfiles/mappings.vim
