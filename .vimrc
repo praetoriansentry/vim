@@ -19,11 +19,11 @@ call pathogen#infect()
 " turn on syntax highlighting
 syntax on
 
+" set color scheme
+color Sunburst
+
 " Don't bother with font options and stuff unless we're in the gui
 if has("gui_running")
-    " set color scheme
-    color Sunburst
-
     " Set the font to inconsolata size 12
     if has("gui_gtk2")
         set guifont=Inconsolata\ 12
