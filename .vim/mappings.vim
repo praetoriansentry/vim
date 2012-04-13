@@ -20,12 +20,6 @@ map <C-left> <ESC>:bp<CR>
 map \l <ESC>:bn<CR>
 map \h <ESC>:bp<CR>
 
-" use f1/f2 to set to unix/dos format
-map <F1> :set fileformat=unix<CR>
-map <F2> :set fileformat=dos<CR>
-
-"use f3 to set wrap/nowrap
-map <F3> :set wrap!<CR>
 
 " use \m for pandoc
 map <Leader>mh :!pandoc -s -c http://s3.jfh.me/css/john.css -f markdown -t html5 % > %.html<CR>
@@ -41,3 +35,9 @@ nmap <unique> <Leader><Leader> <Plug>ZoomWin
 map <Leader>t= :Tabularize /=<CR>
 map <Leader>t: :Tabularize /:<CR>
 map <Leader>t, :Tabularize /,<CR>
+
+" rempaing for file formats
+map <Leader>u :set fileformat=unix<CR>
+map <Leader>d :set fileformat=dos<CR>
+"use \w to set wrap/nowrap
+map <Leader>w :set wrap!<CR>
