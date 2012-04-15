@@ -19,6 +19,10 @@ call pathogen#infect()
 " turn on syntax highlighting
 syntax on
 
+" I usually use a dark background
+set background=dark
+
+
 " set color scheme
 color Sunburst
 
@@ -90,6 +94,10 @@ au BufNewFile,BufRead *.md set ft=mkd
 " Add less syntax highighting
 au BufNewFile,BufRead *.less set filetype=less
 
+" stop making any noise and don't flash the screen...
+" For some reason this has to be set like this..
+au BufNewFile,BufRead * set vb t_vb="<Esc>|0f"
+
 " Hightlight trailing whitespace
 highlight ExtraWhitespace ctermbg=red guibg=red
 
@@ -148,3 +156,4 @@ if has("win32")
 else
     source $HOME/.vim/mappings.vim
 endif
+
