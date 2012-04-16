@@ -31,3 +31,6 @@
 [submodule ".vim/bundle/tabular"]
 	path = .vim/bundle/tabular
 	url = https://github.com/godlygeek/tabular.git
+[submodule ".vim/bundle/taskpaper"]
+	path = .vim/bundle/taskpaper
+	url = https://github.com/davidoc/taskpaper.vim.git
