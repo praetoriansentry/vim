@@ -55,8 +55,8 @@ set expandtab
 " number of spaces to use when pressing the tab key
 set softtabstop=4
 
-" show tabs as >...
-set list listchars=tab:>.
+" show tabs as ▸... and eol as ¬
+set list listchars=tab:▸.,eol:¬
 
 " highlight the search
 set hlsearch

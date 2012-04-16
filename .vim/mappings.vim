@@ -41,3 +41,6 @@ map <Leader>u :set fileformat=unix<CR>
 map <Leader>d :set fileformat=dos<CR>
 "use \w to set wrap/nowrap
 map <Leader>w :set wrap!<CR>
+
+" Shortcut to rapidly toggle `set list`
+nmap <leader>l :set list!<CR>
