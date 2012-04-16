@@ -1,3 +1,6 @@
+" Explicitly setting the script encoding since i have special eol chars
+scriptencoding utf-8
+
 " this seems like something i should set.  Still not completely sure about
 " what it does haha
 " http://vimdoc.sourceforge.net/htmldoc/starting.html#compatible-default
@@ -24,7 +27,7 @@ set background=dark
 
 
 " set color scheme
-color Sunburst
+color badwolf
 
 " Don't bother with font options and stuff unless we're in the gui
 if has("gui_running")
@@ -55,8 +58,8 @@ set expandtab
 " number of spaces to use when pressing the tab key
 set softtabstop=4
 
-" show tabs as ▸... and eol as ¬
-set list listchars=tab:▸.,eol:¬
+" show tabs as >... and eol as ¬
+set list listchars=tab:>.,eol:¬
 
 " highlight the search
 set hlsearch
@@ -156,4 +159,3 @@ if has("win32")
 else
     source $HOME/.vim/mappings.vim
 endif
-
