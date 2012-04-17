@@ -34,3 +34,6 @@
 [submodule ".vim/bundle/zoomwin"]
 	path = .vim/bundle/zoomwin
 	url = https://github.com/vim-scripts/ZoomWin.git
+[submodule ".vim\\bundle\\minibufexpl"]
+	path = .vim\\bundle\\minibufexpl
+	url = https://github.com/fholgado/minibufexpl.vim.git

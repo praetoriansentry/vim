@@ -43,4 +43,4 @@ map <Leader>d :set fileformat=dos<CR>
 map <Leader>w :set wrap!<CR>
 
 " Shortcut to rapidly toggle `set list`
-nmap <leader>l :set list!<CR>
+nmap <leader>e :set list!<CR>
