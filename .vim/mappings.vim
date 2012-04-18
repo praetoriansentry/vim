@@ -31,10 +31,8 @@ map <Leader>nt :NERDTree<CR>
 " double tap leader to run zoomwin
 nmap <unique> <Leader><Leader> <Plug>ZoomWin
 
-" Make some better mappings for Tabular (from spf13)
-map <Leader>t= :Tabularize /=<CR>
-map <Leader>t: :Tabularize /:<CR>
-map <Leader>t, :Tabularize /,<CR>
+" Add a mapping for Gundo
+nnoremap <Leader>g :GundoToggle<CR>
 
 " rempaing for file formats
 map <Leader>u :set fileformat=unix<CR>
