@@ -104,8 +104,15 @@ au BufNewFile,BufRead * set vb t_vb="<Esc>|0f"
 " Hightlight trailing whitespace
 highlight ExtraWhitespace ctermbg=red guibg=red
 
-" this will pick up the trailing white space as long as we aren't typing on the line
+" Show leading whitespace that includes spaces, and trailing whitespace.
 match ExtraWhitespace /\s\+\%#\@<!$/
+
+" For some reason, when I open new windows, the match isn't applied, this is a
+" patch to fix that
+au InsertEnter * match ExtraWhitespace /\s\+\%#\@<!$/
+au InsertLeave * match ExtraWhitespace /\s\+\%#\@<!$/
+
+
 
 " highlight the current line
 set cursorline
