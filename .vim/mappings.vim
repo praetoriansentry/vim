@@ -28,6 +28,9 @@ map <Leader>mp :!pandoc -s --variable=geometry:margin=1in -o %.pdf %<CR>
 " use \nt for nerd tree
 map <Leader>nt :NERDTree<CR>
 
+" use \nc for nerd tree close
+map <Leader>nc :NERDTreeClose<CR>
+
 " double tap leader to run zoomwin
 nmap <unique> <Leader><Leader> <Plug>ZoomWin
 
@@ -37,8 +40,12 @@ nnoremap <Leader>g :GundoToggle<CR>
 " rempaing for file formats
 map <Leader>u :set fileformat=unix<CR>
 map <Leader>d :set fileformat=dos<CR>
+
 "use \w to set wrap/nowrap
 map <Leader>w :set wrap!<CR>
 
 " Shortcut to rapidly toggle `set list`
 nmap <leader>e :set list!<CR>
+
+" I don't ever want to use EX
+map Q gq
