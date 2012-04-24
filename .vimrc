@@ -25,10 +25,6 @@ syntax on
 " I usually use a dark background
 set background=dark
 
-
-" set color scheme
-color badwolf
-
 " Don't bother with font options and stuff unless we're in the gui
 if has("gui_running")
     " Set the font to inconsolata size 12
@@ -41,6 +37,12 @@ if has("gui_running")
     else
         set guifont=Inconsolata:h12:cDEFAULT
     endif
+
+    " set color scheme
+    color badwolf
+else
+    " Use a different color scheme for terminal
+    color ir_black
 endif
 
 " do not wrap long lines by default
