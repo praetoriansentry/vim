@@ -25,6 +25,9 @@ syntax on
 " I usually use a dark background
 set background=dark
 
+" set color scheme
+color badwolf
+
 " Don't bother with font options and stuff unless we're in the gui
 if has("gui_running")
     " Set the font to inconsolata size 12
@@ -38,11 +41,8 @@ if has("gui_running")
         set guifont=Inconsolata:h12:cDEFAULT
     endif
 
-    " set color scheme
-    color badwolf
-else
-    " Use a different color scheme for terminal
-    color ir_black
+    " I don't like this feature on the terminal
+    set cursorline
 endif
 
 " do not wrap long lines by default
@@ -116,8 +116,6 @@ au InsertLeave * match ExtraWhitespace /\s\+\%#\@<!$/
 
 
 
-" highlight the current line
-set cursorline
 
 " make backspace work like most other things
 set backspace=2
