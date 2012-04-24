@@ -49,3 +49,6 @@
 [submodule ".vim/bundle/phpdoc"]
 	path = .vim/bundle/phpdoc
 	url = https://github.com/vexxor/phpdoc.vim.git
+[submodule ".vim/bundle/vim-monokai"]
+	path = .vim/bundle/vim-monokai
+	url = https://github.com/sickill/vim-monokai.git
