@@ -17,8 +17,8 @@ vnoremap <Space> zf
 " faster buffer cyling
 map <C-right> <ESC>:bn<CR>
 map <C-left> <ESC>:bp<CR>
-map \l <ESC>:bn<CR>
-map \h <ESC>:bp<CR>
+map <Leader>l <ESC>:bn<CR>
+map <Leader>h <ESC>:bp<CR>
 
 
 " use \m for pandoc
@@ -49,3 +49,5 @@ nmap <leader>e :set list!<CR>
 
 " I don't ever want to use EX
 map Q gq
+
+map <Leader>p :exe PhpDoc()<CR>

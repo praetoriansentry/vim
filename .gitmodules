@@ -46,3 +46,6 @@
 [submodule ".vim/bundle/vim-smartusline"]
 	path = .vim/bundle/vim-smartusline
 	url = https://github.com/molok/vim-smartusline.git
+[submodule ".vim/bundle/phpdoc"]
+	path = .vim/bundle/phpdoc
+	url = https://github.com/vexxor/phpdoc.vim.git
