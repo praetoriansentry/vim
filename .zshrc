@@ -12,6 +12,8 @@ set -o vi
 autoload -U compinit promptinit
 compinit
 promptinit
-prompt walters
+
+PROMPT="%{$fg[red]%}[%n]%{$reset_color%}%{$fg[blue]%}[%T] %{$reset_color%}$prompt_newline★  "
+RPROMPT="[%{$fg[yellow]%}%~%{$reset_color%}]"
 
 alias -s ls=ls --color
