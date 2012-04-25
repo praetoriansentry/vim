@@ -32,13 +32,13 @@ color badwolf
 if has("gui_running")
     " Set the font to inconsolata size 12
     if has("gui_gtk2")
-        set guifont=Inconsolata\ 12
+        set guifont=DejaVu\ Sans\ Mono\ 12
     elseif has("gui_photon")
-        set guifont=Inconsolata:s12
+        set guifont=DejaVu\ Sans\ Mono:s12
     elseif has("gui_kde")
-        set guifont=Inconsolata/12/-1/5/50/0/0/0/1/0
+        set guifont=DejaVu\ Sans\ Mono/12/-1/5/50/0/0/0/1/0
     else
-        set guifont=Inconsolata:h12:cDEFAULT
+        set guifont=DejaVu_Sans_Mono:h12:cDEFAULT
     endif
 
     " I don't like this feature on the terminal
