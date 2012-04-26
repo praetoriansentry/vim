@@ -13,7 +13,7 @@ autoload -U compinit promptinit
 compinit
 promptinit
 
-PROMPT="%{$fg[red]%}[%n]%{$reset_color%}%{$fg[blue]%}[%T] %{$reset_color%}$prompt_newline ★ $post_prompt"
-RPROMPT="[%{$fg[yellow]%}%~%{$reset_color%}][%?]"
+PROMPT="★ $post_prompt"
+prompt bart
 
 alias -s ls=ls --color
