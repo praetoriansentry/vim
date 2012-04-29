@@ -160,6 +160,9 @@ set ff=unix
 " Set the mouse mode to be a so that everything works nicely on the terminal
 set mouse=a
 
+" Set to use blowfish encryption
+set cm=blowfish
+
 " include my mappings file
 if has("win32")
     source $HOME/vimfiles/mappings.vim
