@@ -13,7 +13,12 @@ autoload -U compinit promptinit
 compinit
 promptinit
 
-PROMPT="★ $post_prompt"
+PS1=`echo -e "\u2605 "`
+PS2="> "
+
+prompt_opts=( cr percent )
+precmd () { }
+preexec () { }
 prompt bart
 
 alias -s ls=ls --color

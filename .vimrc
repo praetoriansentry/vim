@@ -96,6 +96,9 @@ au BufNewFile,BufRead *.json set ft=javascript
 " add markdown syntax highlighting
 au BufNewFile,BufRead *.md set ft=mkd
 
+" for notes and text files set the text with to 72 characters
+au BufNewFile,BufRead *.txt,*.md,*.tmp set tw=72
+
 " Add less syntax highighting
 au BufNewFile,BufRead *.less set filetype=less
 
