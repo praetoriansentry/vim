@@ -1,9 +1,6 @@
 [submodule ".vim/bundle/vim-colorschemes"]
 	path = .vim/bundle/vim-colorschemes
 	url = https://github.com/flazz/vim-colorschemes
-[submodule ".vim/bundle/ctrlp"]
-	path = .vim/bundle/ctrlp
-	url = https://github.com/kien/ctrlp.vim.git
 [submodule ".vim/bundle/delimitmate"]
 	path = .vim/bundle/delimitmate
 	url = https://github.com/Raimondi/delimitMate.git
