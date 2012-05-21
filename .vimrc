@@ -99,6 +99,9 @@ au BufNewFile,BufRead *.md set ft=mkd
 " for notes and text files set the text with to 72 characters
 au BufNewFile,BufRead *.txt,*.md,*.tmp set tw=72
 
+" for notes and text files set spell checking on
+au BufNewFile,BufRead *.txt,*.md,*.tmp set spell
+
 " Add less syntax highighting
 au BufNewFile,BufRead *.less set filetype=less
 
