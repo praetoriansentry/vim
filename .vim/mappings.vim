@@ -20,6 +20,8 @@ map <C-left> <ESC>:bp<CR>
 map <Leader>l <ESC>:bn<CR>
 map <Leader>h <ESC>:bp<CR>
 
+" use \js for jsbeatification
+map <Leader>js :call JsBeautify()<cr>
 
 " use \m for pandoc
 map <Leader>mh :!pandoc -s -c http://s3.jfh.me/css/john.css -f markdown -t html5 % > %.html<CR>
