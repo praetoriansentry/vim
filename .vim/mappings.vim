@@ -1,7 +1,7 @@
 " Standard key mappings for cut/copy/paste
 vnoremap <C-X> "+x
 vnoremap <C-C> "+y
-map <C-V> "+gP:
+map <C-V> "+gP
 exe 'inoremap <script> <C-V>' paste#paste_cmd['i']
 exe 'vnoremap <script> <C-V>' paste#paste_cmd['v']
 map <C-A>   ggVG
