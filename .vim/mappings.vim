@@ -27,6 +27,7 @@ map <Leader>js :call JsBeautify()<cr>
 map <Leader>mh :!pandoc -s -c http://s3.jfh.me/css/john.css -f markdown -t html5 % > %.html<CR>
 map <Leader>mp :!pandoc -s --variable=geometry:margin=1in -o %.pdf %<CR>
 map <Leader>md :!pandoc -s -o %.docx %<CR>
+map <Leader>ms :!pandoc -s -t s5 --variable=s5-url:http://s3.jfh.me/s5 -s % -o %.html<CR>
 
 " use \nt for nerd tree
 map <Leader>nt :NERDTree<CR>
