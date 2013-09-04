@@ -26,7 +26,7 @@ syntax on
 set background=dark
 
 " set color scheme
-color badwolf
+color flatui
 
 " Don't bother with font options and stuff unless we're in the gui
 if has("gui_running")

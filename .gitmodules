@@ -55,3 +55,6 @@
 [submodule ".vim/bundle/vim-jsbeautify"]
 	path = .vim/bundle/vim-jsbeautify
 	url = https://github.com/maksimr/vim-jsbeautify.git
+[submodule ".vim/bundle/vim-flatui"]
+	path = .vim/bundle/vim-flatui
+	url = https://github.com/john2x/flatui.vim.git
