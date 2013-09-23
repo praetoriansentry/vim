@@ -58,3 +58,6 @@
 [submodule ".vim/bundle/vim-flatui"]
 	path = .vim/bundle/vim-flatui
 	url = https://github.com/john2x/flatui.vim.git
+[submodule ".vim/bundle/vim-golang"]
+	path = .vim/bundle/vim-golang
+	url = https://github.com/jnwhiteh/vim-golang.git
