@@ -23,4 +23,8 @@ To add new plugins and stuff
     git submodule add http://github.com/plugin/plugin.git .vim/bundle/plugin
     git add .
 
+## Setup ##
 
+    git clone https://github.com/praetoriansentry/vim.git
+    cd vim
+    git submodule init
