@@ -28,3 +28,4 @@ To add new plugins and stuff
     git clone https://github.com/praetoriansentry/vim.git
     cd vim
     git submodule init
+    git submodule update
